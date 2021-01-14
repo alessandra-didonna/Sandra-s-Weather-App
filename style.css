@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin-top: 100px;
+    color: #000;
+    background: rgb(219,237,255);
+    background: -moz-linear-gradient(65deg, rgba(219,237,255,1) 0%, rgba(233,210,255,1) 100%);
+    background: -webkit-linear-gradient(65deg, rgba(219,237,255,1) 0%, rgba(233,210,255,1) 100%);
+    background: linear-gradient(65deg, rgba(219,237,255,1) 0%, rgba(233,210,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dbedff",endColorstr="#e9d2ff",GradientType=1);
+}
+
+.weatherBox {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: -moz-linear-gradient(0deg, rgba(70,145,255,1) 0%, rgba(71,236,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4691ff",endColorstr="#47eced",GradientType=1);
+    padding: 0 !important;
+}
+
+img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+#snowImg,
+#sunImg,
+#rainImg,
+#cloudImg,
+#stormImg,
+#fogImg,
+#nightImg {
+    visibility: hidden;
+}
+
+.form-group {
+    margin: 2rem 2rem 0.5rem 2rem;
+}
+
+.citySearch {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 5;
+}
+
+input {
+    font-size: 15px !important;
+}
+
+.fa-search {
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    padding: 7.5px;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border: 1px solid lightgrey;
+    transition: 0.5s all;
+}
+
+.fa-search:hover {
+    background-color: rgb(200, 210, 255);
+}
+
+.appBody {
+    position: relative;
+    padding: 10px 30px 30px 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.h1 {
+    margin-bottom: .3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+time {
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 5px black;
+}
+
+.day {
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+#temperature {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.weatherMarginR {
+    border-right: 1px solid rgba(0, 0, 0, 0.637);
+    border-right-width: 3px;
+}
+
+#weatherDescription {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.noMarginBott {
+    margin-bottom: 0 !important;
+}
+
+.index {
+    z-index: 1;
+}
+
+.iconBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherIcon {
+    font-size: 120px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.iconifyWeatherIcon {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.fa-snowflake {
+    background: -webkit-linear-gradient(rgb(78, 255, 255),  rgba(70,145,255,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.iconifyCloud {
+    color: rgb(151, 148, 135);
+}
+
+.iconifySun {
+    color: rgb(255, 238, 0);
+}
+
+.iconifyRain {
+    color: rgb(0, 182, 238);
+}
+
+.iconifyFog {
+    color: rgb(226, 224, 217);
+}
+
+.iconifyThunder {
+    color: rgb(255, 208, 0);
+}
+
+.fa-moon {
+    background: -webkit-linear-gradient(rgb(255, 255, 255),  rgb(255, 235, 85));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-cloud-moon {
+    background: -webkit-linear-gradient(rgb(255, 235, 85), rgb(176, 201, 201));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-cloud-moon-rain {
+    background: -webkit-linear-gradient(rgb(255, 235, 85), rgb(69, 171, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        margin-top: 0;
+    }
+
+    .container-fluid {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container {
+        border-radius: 0;
+    }
+
+    img {
+        border-radius: 0;
+    }
+
+    #weatherDescription {
+        font-size: 1.7rem;
+    }
+
+    #temperature {
+        font-size: 1.8rem;
+    }
+
+    .day {
+        font-size: 1.2rem;
+    }
+
+    time {
+        font-size: 1.4rem;
+        letter-spacing: 6px;
+    }
+}

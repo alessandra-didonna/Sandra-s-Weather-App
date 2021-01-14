@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il meteo di Ale!</title>
+</head>
+    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<body>
+    <div class="container-fluid weatherBox">
+        <div class="container">
+            <div class="backgrounds">
+                <img src="https://i.pinimg.com/originals/64/84/6d/64846daa5a346126ef31c3f1fcbc4703.jpg" id="snowImg" alt="snow">
+                <img src="https://www.teahub.io/photos/full/35-353302_meadows-hd-4k-wallpaper-mountains-sunset-sky-screaming.jpg" id="sunImg" alt="sunnyday">
+                <img src="https://pbs.twimg.com/media/DobCjLyU0AEt6gj.jpg" id="rainImg" alt="rainydai">
+                <img src="https://i.pinimg.com/474x/23/96/e9/2396e983d4211938e1e976ad4056d407.jpg" id="cloudImg" alt="cloud">
+                <img src="https://i.pinimg.com/originals/f6/88/b7/f688b74c09ed2f0804dea2620b43a378.jpg" id="stormImg" alt="storm">
+                <img src="https://i.pinimg.com/736x/f4/c4/4b/f4c44b1eb2827443da957644de8eec61.jpg" id="fogImg" alt="fog">
+                <img src="https://i.pinimg.com/originals/a7/3c/eb/a73ceb211689466ebd331402b414b7d1.jpg" id="nightImg" alt="night">
+            </div>
+            <div class="citySearch form-group">
+                <input type="text" name="weatherSearch" id="citySearchInput" class="form-control" placeholder="Search...">
+                <i id="searchIcon" class="fas fa-search"></i>
+            </div>
+            <div class="appBody">
+                <div class="city-to-date index">
+                    <label id="city" class="h1"></label>
+                    <aside class="float-right">
+                        <time id="localTime" class="font-weight-bold"></time>
+                    </aside>
+                    <div>
+                        <label id="localDay" class="day" for="day"></label>
+                    </div>
+                </div>
+                <div class="iconBox text-center index">
+                    <i id="snowflake" class="far fa-snowflake weatherIcon"></i>
+                    <span id="cloudy" class="iconify iconifyCloud iconifyWeatherIcon" data-icon="wi:cloud" data-inline="false"></span>
+                    <span id="sunny" class="iconify iconifySun iconifyWeatherIcon" data-icon="wi:day-sunny" data-inline="false"></span>
+                    <span id="rainy" class="iconify iconifyRain iconifyWeatherIcon" data-icon="wi:rain" data-inline="false"></span>
+                    <span id="thunderstorm" class="iconify iconifyThunder iconifyWeatherIcon" data-icon="wi:thunderstorm" data-inline="false"></span>
+                    <span id="fog" class="iconify iconifyFog iconifyWeatherIcon" data-icon="wi:fog" data-inline="false"></span>
+                    <i id="clearNight" class="far fa-moon weatherIcon"></i>
+                    <i id="cloudyNight" class="fas fa-cloud-moon weatherIcon"></i>
+                    <i id="rainyNight" class="fas fa-cloud-moon-rain weatherIcon"></i>
+                </div>
+                <footer class="row mt-4 index">
+                    <div class="col-6 text-center weatherMarginR">
+                        <label id="weatherDescription" class="noMarginBott" for="weather"></label>
+                    </div>
+                    <div class="col-6 text-center">
+                        <label id="temperature" class="noMarginBott"></label>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+<script src="JqueryDownl/jquery-3.5.1.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
