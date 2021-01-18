@@ -114,7 +114,6 @@ function setWeather(descriptionResponse) {
         stormIcon.style.visibility = "visible";
         stormImg.style.visibility = "visible";
     }
-
     if (descriptionResponse === "Snow") {
         setHiddenIcon();
         setHiddenImages();
@@ -133,6 +132,12 @@ function setWeather(descriptionResponse) {
         rainIcon.style.visibility = "visible";
         rainImg.style.visibility = "visible";
     }
+    if (descriptionResponse === "Drizzle") { //rain or drizzle
+        setHiddenIcon();
+        setHiddenImages();
+        rainIcon.style.visibility = "visible";
+        rainImg.style.visibility = "visible";
+    }
     if (descriptionResponse === "Clouds") {
         setHiddenIcon();
         setHiddenImages();
@@ -140,6 +145,12 @@ function setWeather(descriptionResponse) {
         cloudImg.style.visibility = "visible";
     }
     if (descriptionResponse === "Mist") {
+        setHiddenIcon();
+        setHiddenImages();
+        fogIcon.style.visibility = "visible";
+        fogImg.style.visibility = "visible";
+    }
+    if (descriptionResponse === "Fog") { //mist or fog
         setHiddenIcon();
         setHiddenImages();
         fogIcon.style.visibility = "visible";
@@ -159,6 +170,13 @@ function setWeather(descriptionResponse) {
         rainyMoonIcon.style.visibility = "visible";
         city.style.textShadow = "1px 1px 15px #fff";
     }
+    if (descriptionResponse === "Drizzle" && localTime.innerHTML > '17:00') {
+        setHiddenIcon();
+        setHiddenImages();
+        nightImg.style.visibility = "visible";
+        rainyMoonIcon.style.visibility = "visible";
+        city.style.textShadow = "1px 1px 15px #fff";
+    }
     if (descriptionResponse === "Clouds" && localTime.innerHTML > '17:00') {
         setHiddenIcon();
         setHiddenImages();
@@ -171,6 +189,20 @@ function setWeather(descriptionResponse) {
         setHiddenImages();
         nightImg.style.visibility = "visible";
         snowIcon.style.visibility = "visible";
+        city.style.textShadow = "1px 1px 15px #fff";
+    }
+    if (descriptionResponse === "Fog" && localTime.innerHTML > '17:00') {
+        setHiddenIcon();
+        setHiddenImages();
+        nightImg.style.visibility = "visible";
+        fogIcon.style.visibility = "visible";
+        city.style.textShadow = "1px 1px 15px #fff";
+    }
+    if (descriptionResponse === "Mist" && localTime.innerHTML > '17:00') {
+        setHiddenIcon();
+        setHiddenImages();
+        nightImg.style.visibility = "visible";
+        fogIcon.style.visibility = "visible";
         city.style.textShadow = "1px 1px 15px #fff";
     }
 }
