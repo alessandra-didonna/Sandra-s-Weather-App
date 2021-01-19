@@ -5,7 +5,7 @@ I've done this simple app to strengthen my studies and my knowledge, and expecia
 I got inspired by looking at what's on the web, but in the end it's all my own work.
 <h1>What i've used:</h1>
 There's only html, css and js, with a little bootstrap.
-<h1>Demo</h1>
+<h1 style="color="red;"">Demo</h1>
 <span><img src="https://github.com/alessandra-didonna/Sandra-s-Weather-App/blob/main/images/demo1.PNG" width="330" height="450">
 <img src="https://github.com/alessandra-didonna/Sandra-s-Weather-App/blob/main/images/demo3.PNG" width="330" height="450">
 <img src="https://github.com/alessandra-didonna/Sandra-s-Weather-App/blob/main/images/demo2.PNG" width="330" height="450"></span>
