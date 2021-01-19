@@ -6,7 +6,7 @@ I got inspired by looking at what's on the web, but in the end it's all my own w
 # What i've used:
 There's only html, css and js, with a little bootstrap.
 # Demo
-![alt text](https://github.com/alessandra-didonna/Sandra-s-Weather-App/blob/main/images/demo1.PNG)
+![Screenshot](https://github.com/alessandra-didonna/Sandra-s-Weather-App/blob/main/images/demo1.PNG)
 ![alt text](https://github.com/alessandra-didonna/Sandra-s-Weather-App/blob/main/images/demo3.PNG)
 ![alt text](https://github.com/alessandra-didonna/Sandra-s-Weather-App/blob/main/images/demo2.PNG)
 # Api
