@@ -9,7 +9,7 @@ There's only html, css and js, with a little bootstrap.
 <img src="https://github.com/alessandra-didonna/Sandra-s-Weather-App/blob/main/images/demo1.PNG" width="370" height="500">
 <img src="https://github.com/alessandra-didonna/Sandra-s-Weather-App/blob/main/images/demo3.PNG" width="370" height="500">
 <img src="https://github.com/alessandra-didonna/Sandra-s-Weather-App/blob/main/images/demo2.PNG" width="370" height="500">
-# Api
+<h1> Api </h1>
 The weather api come from https://openweathermap.org/
-# PS:
+<h1>  PS: </h1>
 The data received from api of Open Weather may not be accurate, sorry for this.
