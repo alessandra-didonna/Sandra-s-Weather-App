@@ -44,8 +44,9 @@ if(m < '10') {
 }
 
 getWeather(defaultCall);
-
+//Setting defaultCall on 0 if users search through input
 searchIcon.addEventListener('click', function() { getWeather(defaultCall = 0) });
+
 citySearchInput.addEventListener('keydown', function(e){
     if(e.key ==  "Enter") {
         getWeather(defaultCall = 0);
@@ -53,7 +54,7 @@ citySearchInput.addEventListener('keydown', function(e){
 });
 
 function getWeather(defaultCall) {
-    // Default Call
+    // default Call on 1 when weatherApp is opened
     if (defaultCall == 1) {
         fetch (getUrl + 'weather?q=' + "Milano" + '&units=metric&APPID=' + apiKey)
         .then ((resolve) => {
